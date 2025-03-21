@@ -1,5 +1,7 @@
 # Patrón Saga con Spring Boot y Kafka
 
+**Realizado por Daniel Alejandro Rodriguez Gomez**
+
 Este proyecto es una implementación práctica del **Patrón Saga** utilizando **Spring Boot** y **Apache Kafka**. El objetivo es demostrar cómo manejar **transacciones distribuidas** en una arquitectura de microservicios basada en eventos.
 
 ## 🚀 **Características principales**
