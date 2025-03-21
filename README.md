@@ -7,9 +7,8 @@ Este proyecto es una implementación práctica del **Patrón Saga** utilizando *
 - Uso de **Kafka** como sistema de mensajería para la comunicación entre servicios.
 - Manejo de **errores y compensaciones** para garantizar la consistencia de los datos.
 - Ejemplo práctico de un sistema de pedidos en línea con los siguientes servicios:
-  - **Servicio de Pedidos**: Crea y gestiona pedidos.
-  - **Servicio de Pagos**: Procesa pagos.
-  - **Servicio de Envíos**: Gestiona el envío de pedidos.
+  - **CompanyMessageBroker**: Envia ordenes recibidas por usuarios en el broker de mensajeria.
+  - **CompanyClient**: Obtiene las ordenes enviadas por los usuarios al broker de mensajeria.
 
 ## 🛠 **Tecnologías utilizadas**
 - **Java**: Lenguaje de programación.
@@ -24,17 +23,22 @@ Este proyecto es una implementación práctica del **Patrón Saga** utilizando *
 
 ## 📂 **Estructura del proyecto**
 El proyecto está dividido en los siguientes módulos:
-1. **order-service**: Servicio de pedidos.
-2. **payment-service**: Servicio de pagos.
-3. **shipping-service**: Servicio de envíos.
-4. **common**: Módulo compartido con DTOs, eventos y configuraciones comunes.
+1. **docker**: Directorio con los docker compose del producer (CompanyMessageBroker) y consumer (CompanyClient).
+2. **microservices**: Microservicios para la implementacion del broker de mensajeria y el cliente que obtiene los mensajes de las ordenes de compra. Se componen de CompanyClient y CompanyMessageBroker.
+3. **mongo**: Directorio con los scripts de la base de datos NoSQL del cliente (CompanyClient).
+4. **postgres**: Directorio con los scripts SQL de la base de datos con el modelo de datos de Broker de mensajeria (CompanyMessageBroker).
+5. **Diagrama de arquitectura sencilla.png**: Contiene el diagrama de componentes del proyecto.
+6. **Librerias en Spring Boot Initializr - consumer.png**: Contiene las dependencias usadas para crear el proyecto del cliente (CompanyClient) usando Spring Boot.
+7.  **Librerias en Spring Boot Initializr - producer.png**: Contiene las dependencias usadas para crear el proyecto del Broker de mensajeria (CompanyMessageBroker) usando Spring Boot.
+8.  **Links utiles EDA.md**: Contiene Links utiles para estudiar mas a fondo los temas tocados en los videos.
 
 ## 🚀 **Cómo ejecutar el proyecto**
 
 ### **Requisitos previos**
 - Java 17 o superior.
-- Docker
-- Git
+- Docker.
+- Git.
+- IntelliJ Community (o Ultimate en caso que tengas licencia paga).
 
 ### **Pasos para ejecutar**
 1. Clona el repositorio:
