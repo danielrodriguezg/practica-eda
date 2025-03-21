@@ -18,7 +18,7 @@ Este proyecto es una implementación práctica del **Patrón Saga** utilizando *
 - **Spring Cloud Stream**: Integración de Kafka con Spring Boot.
 - **PostgreSQL**: Base de datos SQL con el modelo de datos del Broker.
 - **Lombok**: Para reducir el código boilerplate.
-- **MongoDB**: Base de datos SQL con el modelo de datos del cliente.
+- **MongoDB**: Base de datos NoSQL con el modelo de datos del cliente.
 - **Docker**: plataforma de software que permite crear, probar, implementar, actualizar y gestionar aplicaciones en contenedores.
 
 
