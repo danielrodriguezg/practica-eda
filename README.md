@@ -44,3 +44,8 @@ El proyecto está dividido en los siguientes módulos:
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/danielrodriguezg/practica-eda
+
+### **Videos y canales**
+- Canal de YouTube: https://www.youtube.com/@hustlebones16
+- Canal de Twitch: https://www.twitch.tv/hustlebones16
+- Video con la explicación teórica: https://www.youtube.com/watch?v=0fat8nAsntg&t=1315s
