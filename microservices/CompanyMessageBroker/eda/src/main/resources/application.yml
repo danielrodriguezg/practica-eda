@@ -1,0 +1,13 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: CompanyMessageBroker
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: orders-topic
+        input:
+          destination: orders-topic
+          binder: kafka

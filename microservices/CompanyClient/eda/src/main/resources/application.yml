@@ -1,0 +1,13 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: CompanyClient
+  kafka:
+    consumer:
+      enable-auto-commit: false
+    listener:
+      ack-mode: manual
+    properties:
+      retries: 3
+      retry-backoff-ms: 1000
