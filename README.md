@@ -12,11 +12,15 @@ Este proyecto es una implementación práctica del **Patrón Saga** utilizando *
   - **Servicio de Envíos**: Gestiona el envío de pedidos.
 
 ## 🛠 **Tecnologías utilizadas**
+- **Java**: Lenguaje de programación.
 - **Spring Boot**: Framework principal para la construcción de microservicios.
 - **Apache Kafka**: Broker de mensajes para la comunicación asíncrona.
 - **Spring Cloud Stream**: Integración de Kafka con Spring Boot.
-- **H2 Database**: Base de datos en memoria para simplificar la demostración.
+- **PostgreSQL**: Base de datos SQL con el modelo de datos del Broker.
 - **Lombok**: Para reducir el código boilerplate.
+- **MongoDB**: Base de datos SQL con el modelo de datos del cliente.
+- **Docker**: plataforma de software que permite crear, probar, implementar, actualizar y gestionar aplicaciones en contenedores.
+
 
 ## 📂 **Estructura del proyecto**
 El proyecto está dividido en los siguientes módulos:
@@ -30,6 +34,7 @@ El proyecto está dividido en los siguientes módulos:
 ### **Requisitos previos**
 - Java 17 o superior.
 - Docker
+- Git
 
 ### **Pasos para ejecutar**
 1. Clona el repositorio:
