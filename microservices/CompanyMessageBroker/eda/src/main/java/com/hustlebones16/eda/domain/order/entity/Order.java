@@ -19,4 +19,7 @@ public class Order {
 
     private String orderId;
     private String status;
+    public String toJson(){
+        return "prueba mandar un mensajito a kafka";
+    }
 }

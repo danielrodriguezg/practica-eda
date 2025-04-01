@@ -1,14 +1,22 @@
 package com.hustlebones16.eda.domain.order.event;
 
 
+import com.hustlebones16.eda.domain.order.entity.Order;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-import javax.xml.transform.Source;
+import java.util.function.Consumer;
 
-@EnableBinding(Sink.class)
+@Component
 public class OrderEventPublisher {
-    @Autowired
-    public OrderEventPublisher(Source source){
+    private Consumer<String> input;
 
+    @Autowired
+    public OrderEventPublisher(Consumer<String> input){
+        this.input = input;
+    }
+
+    public void publishOrderCreatedEvent(Order order){
+        String payload = order.toJson();
     }
 }

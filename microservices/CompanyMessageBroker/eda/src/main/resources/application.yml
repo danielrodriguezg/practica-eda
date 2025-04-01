@@ -11,3 +11,6 @@ spring:
         input:
           destination: orders-topic
           binder: kafka
+    kafka:
+      binder:
+        broker: 127.0.0.1:9092

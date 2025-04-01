@@ -21,11 +21,11 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
 }
 
 ext {
 	set('springCloudVersion', "2024.0.0")
-	maven { url 'https://repo.spring.io/milestone' }
 }
 
 dependencies {
